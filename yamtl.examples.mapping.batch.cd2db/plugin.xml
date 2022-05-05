@@ -32,5 +32,21 @@
             class="CD.CDPackage"
             genModel="src/main/resources/metamodels/CD.genmodel"/>
    </extension>
+   
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated OO -->
+      <package
+            uri="org.fma.oo"
+            class="OO.OOPackage"
+            genModel="src/main/resources/metamodels/oo.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DB -->
+      <package
+            uri="org.fma.db"
+            class="DB.DBPackage"
+            genModel="src/main/resources/metamodels/db.genmodel"/>
+   </extension>
 
 </plugin>
