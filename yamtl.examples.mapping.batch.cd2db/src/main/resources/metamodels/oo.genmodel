@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/yamtl.examples.mapping.batch.cd2db/src/main/emf-gen"
+    modelPluginID="yamtl.examples.mapping.batch.cd2db" modelName="Oo" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>oo.ecore</foreignModel>
+  <genPackages prefix="OO" disposableProviderFactory="true" ecorePackage="oo.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="oo.ecore#//VisibilityEnum">
+      <genEnumLiterals ecoreEnumLiteral="oo.ecore#//VisibilityEnum/public"/>
+      <genEnumLiterals ecoreEnumLiteral="oo.ecore#//VisibilityEnum/private"/>
+    </genEnums>
+    <genClasses ecoreClass="oo.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference oo.ecore#//Model/contents"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="oo.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oo.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="oo.ecore#//Classifier"/>
+    <genClasses ecoreClass="oo.ecore#//Class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference oo.ecore#//Class/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference oo.ecore#//Class/extendedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference oo.ecore#//Class/features"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oo.ecore#//Class/isAbstract"/>
+    </genClasses>
+    <genClasses ecoreClass="oo.ecore#//Datatype"/>
+    <genClasses image="false" ecoreClass="oo.ecore#//Feature">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference oo.ecore#//Feature/owner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oo.ecore#//Feature/visibility"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="oo.ecore#//StructuralFeature"/>
+    <genClasses ecoreClass="oo.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference oo.ecore#//Reference/type"/>
+    </genClasses>
+    <genClasses ecoreClass="oo.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oo.ecore#//Attribute/isMany"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference oo.ecore#//Attribute/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
