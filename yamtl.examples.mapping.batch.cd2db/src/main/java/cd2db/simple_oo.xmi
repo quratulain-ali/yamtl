@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="OO" xsi:schemaLocation="OO ../metamodels/oo.ecore">
+  <Datatype name="String"/>
+  <Datatype name="Boolean"/>
+  <Datatype name="Real"/>
+  <Class name="Customer">
+    <features xsi:type="Attribute" name="fullname" type="/0"/>
+    <features xsi:type="Attribute" name="active" type="/1"/>
+  </Class>
+  <Class name="Account">
+    <features xsi:type="Attribute" name="number" type="/0"/>
+    <features xsi:type="Attribute" name="balance" type="/2"/>
+    <features xsi:type="Reference" name="owner" type="/3"/>
+  </Class>
+  </xmi:XMI>
