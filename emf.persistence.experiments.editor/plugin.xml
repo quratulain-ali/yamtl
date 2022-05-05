@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Relational -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Relational.presentation.RelationalModelWizardID"
+            name="%_UI_RelationalModelWizard_label"
+            class="Relational.presentation.RelationalModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RelationalModelFile.gif">
+         <description>%_UI_RelationalModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Relational -->
+      <editor
+            id="Relational.presentation.RelationalEditorID"
+            name="%_UI_RelationalEditor_label"
+            icon="icons/full/obj16/RelationalModelFile.gif"
+            extensions="relational"
+            class="Relational.presentation.RelationalEditor"
+            contributorClass="Relational.presentation.RelationalActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated CD -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="CD.presentation.CDModelWizardID"
+            name="%_UI_CDModelWizard_label"
+            class="CD.presentation.CDModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CDModelFile.gif">
+         <description>%_UI_CDModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated CD -->
+      <editor
+            id="CD.presentation.CDEditorID"
+            name="%_UI_CDEditor_label"
+            icon="icons/full/obj16/CDModelFile.gif"
+            extensions="cd"
+            class="CD.presentation.CDEditor"
+            contributorClass="CD.presentation.CDActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
