@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated oo -->
+      <package
+            uri="OO"
+            class="OO.OOPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated db -->
+      <package
+            uri="DB"
+            class="DB.DBPackage"/>
+   </extension>
+
+</plugin>

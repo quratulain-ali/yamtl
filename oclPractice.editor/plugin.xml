@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated oo -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="OO.presentation.OOModelWizardID"
+            name="%_UI_OOModelWizard_label"
+            class="OO.presentation.OOModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/OOModelFile.gif">
+         <description>%_UI_OOModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated oo -->
+      <editor
+            id="OO.presentation.OOEditorID"
+            name="%_UI_OOEditor_label"
+            icon="icons/full/obj16/OOModelFile.gif"
+            extensions="oo"
+            class="OO.presentation.OOEditor"
+            contributorClass="OO.presentation.OOActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated db -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="DB.presentation.DBModelWizardID"
+            name="%_UI_DBModelWizard_label"
+            class="DB.presentation.DBModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DBModelFile.gif">
+         <description>%_UI_DBModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated db -->
+      <editor
+            id="DB.presentation.DBEditorID"
+            name="%_UI_DBEditor_label"
+            icon="icons/full/obj16/DBModelFile.gif"
+            extensions="db"
+            class="DB.presentation.DBEditor"
+            contributorClass="DB.presentation.DBActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
