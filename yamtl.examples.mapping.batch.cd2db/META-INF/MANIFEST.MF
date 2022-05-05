@@ -1,20 +1,28 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: emf.persistence.experiments;singleton:=true
+Bundle-SymbolicName: yamtl.examples.mapping.batch.cd2db;singleton:=true
+Automatic-Module-Name: yamtl.examples.mapping.batch.cd2db
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: CD,
+ DB,
  CD.impl,
+ DB.impl,
  CD.util,
+ DB.util,
  Relational,
+ OO,
  Relational.impl,
- Relational.util
+ OO.impl,
+ Relational.util,
+ OO.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.emf.ecore.xcore.lib
+ org.eclipse.emf.ecore.xcore.lib.source;bundle-version="1.6.0",
+ org.eclipse.emf.ecore.xcore.lib;bundle-version="1.6.0"
 Bundle-ActivationPolicy: lazy
